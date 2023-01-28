@@ -107,10 +107,13 @@ span {
     background-color: rgba(24, 24, 24, 0.3);
     transform-origin: center; /* from center, expand all sides */
     transition: transform .3s;
+    z-index: 1001;
 }
 
 .card1:hover {
     transform: scale(1.05);
+    border: solid .2rem rgb(207, 140, 241);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
 }
 
 .code-container {
