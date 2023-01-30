@@ -108,6 +108,7 @@ span {
     transform-origin: center; /* from center, expand all sides */
     transition: transform .3s;
     z-index: 1001;
+    margin-bottom: 12rem;
 }
 
 .card1:hover {
@@ -118,7 +119,6 @@ span {
 
 .code-container {
     display: flex;
-    justify-content: flex-end;
 }
 
 .code {
@@ -143,8 +143,20 @@ span {
     font-size: 4rem;
 }
 
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    height: 60vh;
+    width: 80vw;
+    border-radius: 2rem;
+    background-color: rgba(24, 24, 24, 0.3);
+    z-index: 1002;
+    margin-bottom: 8rem;
+}
+
 section .wave {
-    position: absolute;
+    position: fixed; /* make a container stay even when scrolling */
     bottom: 0;
     left: 0;
     width: 100%;
